@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Lista de Make</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__conteudo">
+
+            <div class="container__informacoes">
+
+                <div class="container__texto">
+
+                    <h1>Lista de <span class="container__texto-azul">Make</span></h1>
+
+                    <p class="texto__paragrafo">
+                        Clique no botão para mostrar a lista!
+                    </p>
+
+                    <div id="listaMake"></div>
+
+                </div>
+
+                <div class="chute container__botoes">
+
+                    <button onclick="verificarChute()" class="container__botao" id="botaoChutar">
+                        Chutar
+                    </button>
+
+                    <button onclick="voltar()" class="container__botao" id="botaoVoltar" style="display: none;">
+                        Voltar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <img src="./img/eecd27849254eadf9e5db2ffc68876ca.jpg"
+                alt="Uma pessoa olhando para a esquerda"
+                width="600"
+                height="550"
+                class="container__imagem-pessoa">
+
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+
+</body>
+</html>
