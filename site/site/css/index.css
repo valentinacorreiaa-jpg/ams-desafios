@@ -1,0 +1,218 @@
+:root {
+    --main-color: #90EE90;
+    --white: #FFFFFF;
+    --black: #000000;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #a7dfae 0%, #69b494 50%, #164727 100%);
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #FFFFFF;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: 0.2rem solid rgba(31, 120, 50, 1); 
+    height: 110px;
+}
+.fundo {
+    background-color: rgba(255, 255, 255, 0.5); 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    border-radius: 10px;
+    margin-top: 120px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; 
+    max-width: 1000px;
+    min-height: 450px;
+}
+.coluna {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.mascote {
+    border-radius: 10px;
+    width: 600px;
+    object-fit: cover;
+    height: auto;
+    max-height: none;
+    margin-top: 45px;
+    margin-left: 0;
+}
+
+.adocao-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+    padding-left: 60px;
+   
+}
+
+.pet-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    overflow: hidden; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
+    background-color: var(--white);
+}
+
+.pet-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.pet-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.pet-info h3 {
+    margin: 0 0 10px 0;
+    color: #222;
+}
+
+.pet-info p {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.btn-adotar {
+    background-color: #164727;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-adotar:hover {
+    background-color: var(--main-color); 
+}
+.card-doacao {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;           
+    min-width: 290px;
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.texto-doacao {
+    font-size: 1.3rem;
+    color: var(--black);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding-bottom: 35px;
+}
+
+.qrcode-container {
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px dashed #164727;
+}
+
+.img-qrcode {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.qrcode-container span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #164727;
+}
+
+.chave-pix {
+    text-align: left;
+}
+
+.chave-pix label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--black);
+    margin-top: 20px;
+}
+
+.chave-pix input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    background-color: var(--white);
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #164727;
+    box-sizing: border-box;
+}
+
+.rodape {
+    background-color: #164727; 
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-family: "Gelasio", serif;
+    margin-top: 50px;
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
